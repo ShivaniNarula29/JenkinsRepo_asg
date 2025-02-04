@@ -3,7 +3,6 @@ def call(String environment, String codeBasePath, String actionMessage, String p
     echo "${codeBasePath}/Ansible_29/Assignment5/playbook.yaml"
     sh '''
     export ANSIBLE_CONFIG=ansible.cfg
-    -i ${codeBasePath}/inventory/${environment}.ini ${codeBasePath}/deploy.yml
     ansible-playbook -i /home/ubuntu/Ansible_29/Assignment5/prometheus_tool/tests/inventory ${codeBasePath}/Ansible_29/Assignment5/playbook.yaml
     '''
     // Call Prometheus after playbook execution to monitor the deployment
