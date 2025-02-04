@@ -1,9 +1,9 @@
-def call(environment, codeBasePath, actionMessage, prometheusHost) {
+def call(String environment, String codeBasePath, String actionMessage, String prometheusHost) {
     // Ensure Ansible environment is properly set up before running
     echo "${codeBasePath}/Ansible_29/Assignment5/playbook.yaml"
     sh '''
     export ANSIBLE_CONFIG=ansible.cfg
-    ansible-playbook ${codeBasePath}/Ansible_29/Assignment5/playbook.yaml
+    ansible-playbook codeBasePath/Ansible_29/Assignment5/playbook.yaml
     '''
     // Call Prometheus after playbook execution to monitor the deployment
     sh """
