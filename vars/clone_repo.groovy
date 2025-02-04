@@ -1,4 +1,4 @@
-def call(codeBasePath,env) {
-    git url: 'https://github.com/ShivaniNarula29/JenkinsRepo_asg.git', branch: ${env}
+def call(codeBasePath,repoUrl,env) {
+    git url: ${repoUrl}, branch: ${env}
     echo "Cloned repo from ${codeBasePath}"
 }
