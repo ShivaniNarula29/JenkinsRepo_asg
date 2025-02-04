@@ -1,5 +1,6 @@
 def call(environment, codeBasePath, actionMessage, prometheusHost) {
     // Ensure Ansible environment is properly set up before running
+    echo "${codeBasePath}/Ansible_29/Assignment5/playbook.yaml"
     sh '''
     export ANSIBLE_CONFIG=ansible.cfg
     ansible-playbook ${codeBasePath}/Ansible_29/Assignment5/playbook.yaml
