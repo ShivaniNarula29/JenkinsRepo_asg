@@ -1,4 +1,4 @@
-def runAnsiblePlaybook(environment, codeBasePath, actionMessage, prometheusHost) {
+def call(environment, codeBasePath, actionMessage, prometheusHost) {
     // Ensure Ansible environment is properly set up before running
     sh '''
     export ANSIBLE_CONFIG=ansible.cfg
