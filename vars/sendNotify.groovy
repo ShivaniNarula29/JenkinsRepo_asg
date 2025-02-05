@@ -3,7 +3,6 @@
 //                  message: message, 
 //                  color: color)
 // }
-def sendNotify(channel, message, color) {
     slackSend (
         channel: channel,
         color: color,
