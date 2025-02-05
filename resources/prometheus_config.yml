@@ -1,4 +1,4 @@
-SLACK_CHANNEL_NAME: build-status
+SLACK_CHANNEL_NAME: ninja-socket-crew
 ENVIRONMENT: prod
 CODE_BASE_PATH: /home/ubuntu
 ACTION_MESSAGE: "Deployment in progress"
